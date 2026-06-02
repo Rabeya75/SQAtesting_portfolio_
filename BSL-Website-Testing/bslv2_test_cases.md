@@ -1,35 +1,117 @@
+Test Cases: Brain System Limited (BSL) Website
+URL: https://techcloudltd.work/demo/bslv2/ 
+Type: Frontend & Responsive Testing
+Date: 2026-06-01
+
 1. Page Load & Performance
-TC IDTest CaseStepsExpected ResultPriorityPL-01Initial page loadOpen URL in browserPage loads within 3 secondsHighPL-02Title verificationCheck browser tabTitle shows "Brain System Limited – Democratizing Artificial Intelligence"HighPL-03Meta descriptionInspect <meta> tagsMeta description is present and meaningfulMediumPL-04Favicon presenceCheck browser tab iconFavicon is visibleLowPL-05No console errorsOpen DevTools console on loadZero JavaScript errors on initial loadHighPL-06HTTPS / SSLCheck address barSecure padlock shown, no mixed-content warningsHigh
+| TC ID | Test Case          | Steps                         | Expected Result                                                            | Priority |
+| ----- | ------------------ | ----------------------------- | -------------------------------------------------------------------------- | -------- |
+| PL-01 | Initial page load  | Open URL in browser           | Page loads within 3 seconds                                                | High     |
+| PL-02 | Title verification | Check browser tab             | Title shows "Brain System Limited – Democratizing Artificial Intelligence" | High     |
+| PL-03 | Meta description   | Inspect `<meta>` tags         | Meta description is present and meaningful                                 | Medium   |
+| PL-04 | Favicon presence   | Check browser tab icon        | Favicon is visible                                                         | Low      |
+| PL-05 | No console errors  | Open DevTools console on load | Zero JavaScript errors                                                     | High     |
+| PL-06 | HTTPS / SSL        | Check address bar             | Secure padlock shown, no warnings                                          | High     |
+
 
 2. Navigation / Header
-TC IDTest CaseStepsExpected ResultPriorityNAV-01Logo visibleLoad pageLogo renders correctly with no distortionHighNAV-02Logo clickClick on logoRedirects to homepage / top of pageHighNAV-03All nav links presentInspect headerAll menu items (Home, About, Services, Contact, etc.) visibleHighNAV-04Nav link hover stateHover over each linkVisual hover effect (color/underline) appearsMediumNAV-05Active link highlightNavigate to each sectionActive/current section is highlighted in navMediumNAV-06Sticky headerScroll down the pageHeader stays fixed at top while scrollingMediumNAV-07Hamburger menu (mobile)Resize to ≤768pxHamburger icon appears; desktop nav hidesHighNAV-08Hamburger open/closeClick hamburger on mobileMenu opens; click again or outside to closeHighNAV-09Mobile nav link clickOpen menu, click a linkMenu closes and navigates to correct sectionHigh
+| TC ID  | Test Case             | Steps              | Expected Result             | Priority |
+| ------ | --------------------- | ------------------ | --------------------------- | -------- |
+| NAV-01 | Logo visible          | Load page          | Logo renders correctly      | High     |
+| NAV-02 | Logo click            | Click logo         | Redirects to homepage/top   | High     |
+| NAV-03 | Nav links present     | Inspect header     | All menu items visible      | High     |
+| NAV-04 | Hover state           | Hover links        | Visual hover effect appears | Medium   |
+| NAV-05 | Active link highlight | Navigate sections  | Active section highlighted  | Medium   |
+| NAV-06 | Sticky header         | Scroll page        | Header stays fixed          | Medium   |
+| NAV-07 | Mobile hamburger      | Resize ≤768px      | Hamburger appears           | High     |
+| NAV-08 | Menu toggle           | Click hamburger    | Menu opens/closes           | High     |
+| NAV-09 | Mobile link click     | Click link in menu | Menu closes + navigates     | High     |
 
 3. Hero / Banner Section
-TC IDTest CaseStepsExpected ResultPriorityHERO-01Hero text visibleView above-the-fold areaHeadline and subheadline render clearlyHighHERO-02CTA button presentCheck hero sectionCall-to-action button(s) are visibleHighHERO-03CTA button clickClick primary CTANavigates to correct section or pageHighHERO-04Hero image/animationObserve heroBackground image or animation loads without glitchMediumHERO-05Hero text contrastCheck text over backgroundText is readable (WCAG AA: contrast ratio ≥ 4.5:1)High
+| TC ID   | Test Case          | Steps             | Expected Result                 | Priority |
+| ------- | ------------------ | ----------------- | ------------------------------- | -------- |
+| HERO-01 | Hero text visible  | View top section  | Headline/subheadline visible    | High     |
+| HERO-02 | CTA button present | Check hero        | CTA button visible              | High     |
+| HERO-03 | CTA click          | Click CTA         | Navigates correctly             | High     |
+| HERO-04 | Hero image         | Observe section   | Image/animation loads correctly | Medium   |
+| HERO-05 | Text contrast      | Check readability | WCAG AA compliance              | High     |
+
 
 4. Content Sections
-TC IDTest CaseStepsExpected ResultPriorityCONT-01All sections loadScroll through full pageAll sections (About, Services, Features, etc.) are presentHighCONT-02Images loadScroll through pageNo broken image icons (alt text shows if image fails)HighCONT-03Icons renderObserve icon setsAll icons are sharp and correctly sizedMediumCONT-04Text readabilityRead all contentNo truncated or overlapping textHighCONT-05Section heading hierarchyInspect HTMLHeadings follow H1 → H2 → H3 orderMediumCONT-06Cards / grids alignmentObserve feature/service cardsCards are evenly spaced and aligned in gridMediumCONT-07Animations / transitionsScroll down slowlyScroll-triggered animations fire at correct positionsLow
+| TC ID   | Test Case         | Steps         | Expected Result              | Priority |
+| ------- | ----------------- | ------------- | ---------------------------- | -------- |
+| CONT-01 | Sections load     | Scroll page   | All sections visible         | High     |
+| CONT-02 | Images load       | Scroll page   | No broken images             | High     |
+| CONT-03 | Icons render      | Observe icons | Icons display correctly      | Medium   |
+| CONT-04 | Text readability  | Read content  | No overlap/truncation        | High     |
+| CONT-05 | Heading structure | Inspect HTML  | Proper H1 → H2 → H3          | Medium   |
+| CONT-06 | Card alignment    | Check layout  | Proper grid alignment        | Medium   |
+| CONT-07 | Animations        | Scroll page   | Animations trigger correctly | Low      |
+
 
 5. Links & Buttons
-TC IDTest CaseStepsExpected ResultPriorityLNK-01Internal anchor linksClick each section linkSmooth scroll to correct sectionHighLNK-02External linksClick any external linkOpens in new tab (target="_blank")MediumLNK-03No broken linksClick all links on pageNo 404 or error pagesHighLNK-04Button hover stateHover over all buttonsVisual feedback on hover (color shift, shadow)MediumLNK-05Button focus stateTab through buttonsVisible focus ring for keyboard accessibilityMedium
+| TC ID  | Test Case      | Steps                | Expected Result       | Priority |
+| ------ | -------------- | -------------------- | --------------------- | -------- |
+| LNK-01 | Internal links | Click section links  | Smooth scroll works   | High     |
+| LNK-02 | External links | Click external links | Opens new tab         | Medium   |
+| LNK-03 | Broken links   | Test all links       | No 404 errors         | High     |
+| LNK-04 | Hover state    | Hover buttons        | Visual feedback shown | Medium   |
+| LNK-05 | Focus state    | Tab navigation       | Focus outline visible | Medium   |
+
 
 6. Forms (if present)
-TC IDTest CaseStepsExpected ResultPriorityFORM-01Form fields visibleNavigate to Contact/Demo sectionAll form fields render correctlyHighFORM-02Placeholder textInspect fieldsPlaceholder text guides user inputMediumFORM-03Required field validationSubmit empty formError messages shown for required fieldsHighFORM-04Email validationEnter invalid email → submitError: "Please enter a valid email"HighFORM-05Successful submissionFill valid data → submitSuccess message or redirect confirmedHighFORM-06Form on mobileUse form on 375px viewportFields are tappable and keyboard doesn't break layoutHigh
+| TC ID   | Test Case           | Steps                | Expected Result            | Priority |
+| ------- | ------------------- | -------------------- | -------------------------- | -------- |
+| FORM-01 | Form visible        | Open contact section | All fields visible         | High     |
+| FORM-02 | Placeholder         | Inspect fields       | Helpful placeholders shown | Medium   |
+| FORM-03 | Required validation | Submit empty form    | Error messages shown       | High     |
+| FORM-04 | Email validation    | Enter invalid email  | Error shown                | High     |
+| FORM-05 | Successful submit   | Submit valid form    | Success message shown      | High     |
+| FORM-06 | Mobile form         | Test on 375px        | Layout not broken          | High     |
+
 
 7. Footer
-TC IDTest CaseStepsExpected ResultPriorityFTR-01Footer visibleScroll to bottomFooter renders completelyHighFTR-02Copyright textCheck footerCopyright year and company name presentMediumFTR-03Footer linksClick each footer linkAll links navigate correctlyHighFTR-04Social media iconsObserve footerIcons present and link to correct profilesMedium
+| TC ID  | Test Case      | Steps         | Expected Result           | Priority |
+| ------ | -------------- | ------------- | ------------------------- | -------- |
+| FTR-01 | Footer visible | Scroll bottom | Footer displays correctly | High     |
+| FTR-02 | Copyright      | Check footer  | Correct text present      | Medium   |
+| FTR-03 | Footer links   | Click links   | Navigation works          | High     |
+| FTR-04 | Social icons   | Check icons   | Links correct             | Medium   |
 
 8. Responsive / Viewport Testing
-8.1 Breakpoint Definitions
-BreakpointWidthMobile S320pxMobile M375pxMobile L425pxTablet768pxLaptop1024pxLaptop L1440px4K2560px
-
-8.2 Responsive Test Cases
-TC IDTest CaseViewportExpected ResultPriorityRESP-01Layout at 320px320×568No horizontal scroll; content fitsHighRESP-02Layout at 375px375×667Text, images, cards stack verticallyHighRESP-03Layout at 425px425×767Single-column layout; no overflowHighRESP-04Layout at 768px768×10242-column grid visible; nav may switch to desktopHighRESP-05Layout at 1024px1024×768Full desktop nav visible; multi-column layoutHighRESP-06Layout at 1440px1440×900Wide layout centered; no excessive whitespaceMediumRESP-07No horizontal scrollAll viewportsoverflow-x never triggers scrollbarHighRESP-08Images scaleResize browserImages scale proportionally, never overflowHighRESP-09Font size readabilityMobile viewportsMin font size 14px; no tiny unreadable textHighRESP-10Touch targets375px (mobile)Buttons/links ≥ 44×44px tap areaHighRESP-11Grid reflow375px → 768px → 1024pxGrid columns change at correct breakpointsMediumRESP-12Video/embed scalingAll viewportsEmbedded media is responsive (16:9 ratio maintained)MediumRESP-13Hero section mobile375pxHero text readable; CTA button not clippedHighRESP-14Landscape orientation667×375 (landscape mobile)Layout adapts; no broken sectionsMedium
+| TC ID   | Test Case     | Viewport    | Expected Result      | Priority |
+| ------- | ------------- | ----------- | -------------------- | -------- |
+| RESP-01 | Mobile 320px  | 320×568     | No horizontal scroll | High     |
+| RESP-02 | Mobile 375px  | 375×667     | Stack layout         | High     |
+| RESP-03 | Mobile 425px  | 425×767     | Single column        | High     |
+| RESP-04 | Tablet        | 768×1024    | 2-column layout      | High     |
+| RESP-05 | Laptop        | 1024×768    | Desktop layout       | High     |
+| RESP-06 | Large screen  | 1440px      | Centered layout      | Medium   |
+| RESP-07 | No overflow   | All         | No horizontal scroll | High     |
+| RESP-08 | Image scaling | All         | Responsive images    | High     |
+| RESP-09 | Font size     | Mobile      | Readable text        | High     |
+| RESP-10 | Touch targets | Mobile      | ≥44px buttons        | High     |
+| RESP-11 | Grid reflow   | Breakpoints | Proper layout shift  | Medium   |
+| RESP-12 | Media scaling | All         | Responsive embeds    | Medium   |
+| RESP-13 | Hero mobile   | 375px       | No clipping          | High     |
+| RESP-14 | Landscape     | 667×375     | Layout adapts        | Medium   |
 
 9. Cross-Browser Testing
-TC IDBrowserVersionExpected ResultPriorityCB-01ChromeLatestFull functionalityHighCB-02FirefoxLatestFull functionalityHighCB-03SafariLatestFull functionalityHighCB-04EdgeLatestFull functionalityMediumCB-05Chrome (Android)LatestMobile layout correctHighCB-06Safari (iOS)LatestMobile layout correctHigh
+| TC ID | Browser        | Version | Expected Result | Priority |
+| ----- | -------------- | ------- | --------------- | -------- |
+| CB-01 | Chrome         | Latest  | Full support    | High     |
+| CB-02 | Firefox        | Latest  | Full support    | High     |
+| CB-03 | Safari         | Latest  | Full support    | High     |
+| CB-04 | Edge           | Latest  | Works correctly | Medium   |
+| CB-05 | Android Chrome | Latest  | Mobile OK       | High     |
+| CB-06 | iOS Safari     | Latest  | Mobile OK       | High     |
 
 10. Accessibility (A11y)
-TC IDTest CaseTool/MethodExpected ResultPriorityA11Y-01Image alt textInspect <img> tagsAll images have meaningful alt attributesHighA11Y-02Keyboard navigationTab through pageAll interactive elements are reachable via TabHighA11Y-03Color contrastChrome DevTools / LighthouseAll text meets WCAG AA (4.5:1 normal, 3:1 large)HighA11Y-04ARIA labelsInspect interactive elementsButtons/links have descriptive labelsMediumA11Y-05Screen reader testNVDA / VoiceOverContent is read in logical orderMediumA11Y-06Lighthouse scoreRun Lighthouse auditAccessibility score ≥ 80Medium
-cd..
-
+| TC ID   | Test Case        | Method         | Expected Result     | Priority |
+| ------- | ---------------- | -------------- | ------------------- | -------- |
+| A11Y-01 | Alt text         | Inspect HTML   | All images have alt | High     |
+| A11Y-02 | Keyboard nav     | Tab test       | Fully accessible    | High     |
+| A11Y-03 | Contrast         | Lighthouse     | WCAG AA passed      | High     |
+| A11Y-04 | ARIA labels      | Inspect        | Proper labels       | Medium   |
+| A11Y-05 | Screen reader    | NVDA/VoiceOver | Logical reading     | Medium   |
+| A11Y-06 | Lighthouse score | Audit          | ≥80 accessibility   | Medium   |
