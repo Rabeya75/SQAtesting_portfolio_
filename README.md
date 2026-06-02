@@ -7,9 +7,8 @@ Skilled in manual testing, responsive UI testing, and bug reporting.
 ## Projects
 |Brain System | Frontend + Responsive Testing | https://techcloudltd.work/demo/bslv2/ |
 |---------|------|------|
-| Test Cases (BSL) | Manual QA Test Cases | [👉 View BSL Test Cases](./BSL-Website-Testing/bslv2_test_cases.md) |
+| Test Cases (BSL) | Manual QA Test Cases | [👉 View BSL Test Cases ](./BSL-Website-Testing/bslv2_test_cases.md) |
 
-👉 [View BSL Test Cases]()
 
 ## Skills
 - Manual Testing · Test Case Writing
