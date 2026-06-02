@@ -4,6 +4,7 @@ Type: Frontend & Responsive Testing
 Date: 2026-06-01
 
 1. Page Load & Performance
+
 | TC ID | Test Case          | Steps                         | Expected Result                                                            | Priority |
 | ----- | ------------------ | ----------------------------- | -------------------------------------------------------------------------- | -------- |
 | PL-01 | Initial page load  | Open URL in browser           | Page loads within 3 seconds                                                | High     |
@@ -15,6 +16,7 @@ Date: 2026-06-01
 
 
 2. Navigation / Header
+
 | TC ID  | Test Case             | Steps              | Expected Result             | Priority |
 | ------ | --------------------- | ------------------ | --------------------------- | -------- |
 | NAV-01 | Logo visible          | Load page          | Logo renders correctly      | High     |
@@ -28,6 +30,7 @@ Date: 2026-06-01
 | NAV-09 | Mobile link click     | Click link in menu | Menu closes + navigates     | High     |
 
 3. Hero / Banner Section
+
 | TC ID   | Test Case          | Steps             | Expected Result                 | Priority |
 | ------- | ------------------ | ----------------- | ------------------------------- | -------- |
 | HERO-01 | Hero text visible  | View top section  | Headline/subheadline visible    | High     |
@@ -38,6 +41,7 @@ Date: 2026-06-01
 
 
 4. Content Sections
+
 | TC ID   | Test Case         | Steps         | Expected Result              | Priority |
 | ------- | ----------------- | ------------- | ---------------------------- | -------- |
 | CONT-01 | Sections load     | Scroll page   | All sections visible         | High     |
@@ -50,6 +54,7 @@ Date: 2026-06-01
 
 
 5. Links & Buttons
+
 | TC ID  | Test Case      | Steps                | Expected Result       | Priority |
 | ------ | -------------- | -------------------- | --------------------- | -------- |
 | LNK-01 | Internal links | Click section links  | Smooth scroll works   | High     |
@@ -60,6 +65,7 @@ Date: 2026-06-01
 
 
 6. Forms (if present)
+
 | TC ID   | Test Case           | Steps                | Expected Result            | Priority |
 | ------- | ------------------- | -------------------- | -------------------------- | -------- |
 | FORM-01 | Form visible        | Open contact section | All fields visible         | High     |
@@ -71,6 +77,7 @@ Date: 2026-06-01
 
 
 7. Footer
+
 | TC ID  | Test Case      | Steps         | Expected Result           | Priority |
 | ------ | -------------- | ------------- | ------------------------- | -------- |
 | FTR-01 | Footer visible | Scroll bottom | Footer displays correctly | High     |
@@ -79,6 +86,7 @@ Date: 2026-06-01
 | FTR-04 | Social icons   | Check icons   | Links correct             | Medium   |
 
 8. Responsive / Viewport Testing
+
 | TC ID   | Test Case     | Viewport    | Expected Result      | Priority |
 | ------- | ------------- | ----------- | -------------------- | -------- |
 | RESP-01 | Mobile 320px  | 320×568     | No horizontal scroll | High     |
@@ -97,6 +105,7 @@ Date: 2026-06-01
 | RESP-14 | Landscape     | 667×375     | Layout adapts        | Medium   |
 
 9. Cross-Browser Testing
+
 | TC ID | Browser        | Version | Expected Result | Priority |
 | ----- | -------------- | ------- | --------------- | -------- |
 | CB-01 | Chrome         | Latest  | Full support    | High     |
@@ -107,6 +116,7 @@ Date: 2026-06-01
 | CB-06 | iOS Safari     | Latest  | Mobile OK       | High     |
 
 10. Accessibility (A11y)
+
 | TC ID   | Test Case        | Method         | Expected Result     | Priority |
 | ------- | ---------------- | -------------- | ------------------- | -------- |
 | A11Y-01 | Alt text         | Inspect HTML   | All images have alt | High     |
